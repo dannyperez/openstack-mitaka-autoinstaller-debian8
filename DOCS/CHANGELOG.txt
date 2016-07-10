@@ -1,0 +1,50 @@
+1.0.5.ub1604lts - June 14, 2016
+
+- Changes in aodh and heat install modules aimed
+  to allow proper autoscaling implementation.
+- Minor changes in main README.
+
+1.0.4.ub1604lts - May 30, 2016
+
+- Bugfix: Added missing aodh config items in
+  main config file.
+
+1.0.3.ub1604lts - May 28, 2016
+
+- Minor modifications in neutron install module.
+- Added new script for cpu metrics report:
+  "instance-cpu-metrics-report.sh".
+  This script reports the min/max/avg cpu usage
+  for every active instance in your cloud. This
+  script requires ceilometer installed and fully
+  active.
+
+1.0.2.ub1604lts - May 25, 2016
+
+- Added new config option "swiftmetrics" in
+  order to enable or disable ceilometer metrics
+  for swift.
+- Corrected a little typo on ceilometer install
+  module.
+- Updated main documentation.
+
+1.0.1.ub1604lts - May 18, 2016
+
+- Added notes regarding Designate and Manila
+  breaking Horizon. If you install any or both
+  of those components, Horizon will be unusable.
+- Added some minor changes to horizon install
+  module.
+
+1.0.0.ub1604lts - May 17, 2016
+
+- First release for Ubuntu 16.04 lts Distro.
+- Adapted from our ubuntu 14.04 based installer,
+  version 1.2.1.ub1404lts.
+- Updated all modules in order to adapt to new
+  services managed by systemctl.
+- Corrected missing config item in glance registry.
+- Added temporary workaround for dbsync failures
+  in trove due bug with MariaDB 10.0 (the bug is
+  in trove, not in MariaDB).
+

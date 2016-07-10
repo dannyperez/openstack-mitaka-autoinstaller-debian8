@@ -1,0 +1,24 @@
+#######################################################
+# Unattended/SemiAutomated OpenStack Installer
+# Danny j. Pérez M. perezdann at gmail dot com
+# Based on 1.0.5 ubuntu16lts by Reynaldo R. Martinez P. TigerLinux at gmail dot com
+#
+# Main Installer Script
+# Version: 1.0.6.deb8 "Daenerys"
+# July 09, 2016
+#
+# OpenStack MITAKA for Debian 8
+# E-Mail: TigerLinux@Gmail.com
+#
+# Basic SNMP Access
+#######################################################
+com2sec public  0.0.0.0/0	OpenStack
+com2sec public  localhost	OpenStack
+group public v1 public
+group public v2c public
+view all included .1
+access public "" any noauth prefix all none none
+#
+#
+#
+
